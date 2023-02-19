@@ -4,10 +4,60 @@
     box-sizing: border-box;
 }
 
+
+
+
 body {
-    font-size: 20px;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    background-color: white;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.container {
+    width: 100%;
+}
+
+nav {
+    display: flex;
+    background-color: #fff;
+    color: black;
+}
+
+nav .mainMenu {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    font-weight: 550;
+    gap: 20px;
+    margin: 0 auto;
+    /* margin-left: 18rem; */
+}
+
+nav .mainMenu li a {
+    display: inline-block;
+    padding: 15px;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: .7rem;
+}
+nav .mainMenu li a:hover {
+    background: white;
+    color: blue;
+}
+
+nav .openMenu {
+    font-size: 1rem;
+    margin: 20px;
+    display: none;
+}
+
+nav .closeMenu {
+    display: none;
+}
+
+nav .logo {
+    margin: 6px;
+    font-size: 18px;
+    cursor: pointer;
+    margin-left: 1rem;
 }
 
 header {
@@ -15,27 +65,23 @@ header {
 }
 
 .container {
-    width: 90%;
+    width: 100%;
     margin: 0 auto;
 }
 
-nav {
-    display: flex;
-    justify-content: space-between;
-}
-
-nav p {
-    font-weight: 700;
-}
-
-ul {
-    display: flex;
-    gap: 20px;
+.list, .star {
     list-style: none;
+    margin-top: .7rem;
 }
 
-li a {
+.star {
+    background-color: rgb(54, 54, 230);
+    color: #fff;
     text-decoration: none;
+    width: 100%;
+    border-radius: 4px;
+    text-align: center;
+    padding: .5rem;
 }
 
 .hero {
@@ -44,6 +90,10 @@ li a {
 
 .hero-text {
     margin-top: 50px;
+}
+
+.hero-img img {
+    transition: 2s;
 }
 
 .hero-text h1 {
@@ -56,6 +106,17 @@ li a {
     opacity: .8;
 }
 
+.fish h2 {
+    margin-left: 19rem;
+}
+
+.glas img {
+    width: 35%;
+    margin-left: 21rem;
+    margin-top: 1rem;
+}
+
+
 .hero-img img {
     margin-top: 40px;
 }
@@ -63,7 +124,7 @@ li a {
 .hero-text a {
     text-decoration: none;
     padding: .5rem 2rem;
-    background-color: #000;
+    background-color: rgb(54, 54, 230);
     text-decoration: none;
     margin-top: 2rem;
     display: flex;
@@ -74,12 +135,10 @@ li a {
 
 .gone {
     display: flex;
+    justify-content: space-between;
+    transition: 2s ease;
 }
 
-
-.fish {
-    margin: 40px;
-}
 
 .gone-text img {
     width: 60%;
@@ -90,71 +149,311 @@ li a {
     margin-left: 2rem;
 }
 
-
-.fish img {
-    margin-left: 1rem;
+.carts a {
+    border: 1px solid;
+    text-decoration: none;
+    margin-left: 2rem;
+    padding-left: 3rem;
+    padding-right: 3rem;
+    padding-top: .3rem;
+    padding-bottom: .3rem;
+    color: blue;
 }
 
-.fish h2 {
-    margin-left: 3rem;
+.cart a {
+    color: blue;
 }
+
+.cart {
+    margin-left: 21rem;
+}
+
+.add {
+    margin-top: 1rem;
+}
+
+.to {
+    margin-top: 1rem;
+}
+
+.cart a {
+    text-decoration: none;
+    border: 1px solid;
+    margin-left: 2rem;
+    padding-left: 3rem;
+    padding-right: 3rem;
+    padding-top: .3rem;
+    padding-bottom: .3rem;
+}
+
+.cart p {
+    font-weight: 800;
+}
+
+.carts p {
+    font-weight: 800;
+}
+
+
 
 .wrist {
     display: flex;
     justify-content: space-between;
 }
 
+.wrist-text h2 {
+    margin-top: 3rem;
+}
 
 .wrist-text img {
-    width: 90%;
+    width: 55%;
     margin-top: 20px;
 }
 
-.wrist-text h2 {
-    margin-left: 2rem;
-}
 
 .neck h2 {
-    margin-left: 25rem;
+    margin-left: 22rem;
+    margin-top: 3rem;
 }
 
 
 .neck img {
-    width: 50%;
+    width: 40%;
     margin-left: 20rem;
     margin-top: 20px;
 }
 
-
-footer {
+.more {
     display: flex;
-    justify-content: space-between;
-    background-color: #000;
-    color: white;
-    padding: 2rem;
+    justify-content: center;
 }
 
-@media(max-width:500px){
+.more a {
+    text-decoration: none;
+    background-color: black;
+    color: white;
+    padding: 1rem;
+    border-radius: 6px;
+}
+
+.touch {
+    margin-left: 3rem;
+    margin-top: 3rem;
+    box-shadow: black;
+    background-color: rgb(241, 240, 240);
+    width: 20%;
+    padding: 1rem;
+    border-radius: 8px;
+}
+
+.getin h1 {
+    font-size: 20px;
+}
+
+.getin p {
+    margin-top: .5rem;
+    opacity: .7;
+}
+
+.locate h1 {
+    font-size: 20px;
+    margin-top: 2rem;
+}
+
+.locate p {
+    margin-top: .5rem;
+    opacity: .7;
+}
+
+.emai h1 {
+    font-size: 20px;
+    margin-top: 1.5rem;
+}
+
+.emai p {
+    margin-top: .5rem;
+    opacity: .7;
+}
+
+.phon h1 {
+    font-size: 20px;
+    margin-top: 1rem;
+}
+
+.phon p {
+    margin-top: .5rem;
+    opacity: .7;
+}
+
+.lines {
+    width: 100%;
+    margin-top: 1rem;
+    opacity: .6;
+}
+
+.city {
+    display: flex;
+    background: rgb(78, 122, 241);
+    color: white;
+    margin-top: 3rem;
+}
+
+.refuge h1 {
+    font-size: 20px;
+    margin-left: 3rem;
+}
+
+.refuge, .street {
+    width: 50%;
+    margin-top: 1rem;
+    margin-left: 3rem;
+}
+
+.refuge, .email {
+    margin-top: 2rem;
+    margin-left: 3rem;
+}
+
+.refuge, .phone {
+    margin-left: 3rem;
+    margin-top: 1rem;
+}
+
+.useful h1 {
+    font-size: 20px;
+    margin-top: 2rem;
+    margin-left: 1rem;
+}
+
+
+.icons {
+    text-decoration: none;
+    color: #fff;
+}
+
+.icons i {
+    color: #fff;
+    font-size: 30px;
+    padding-left: 14px;
+    padding-top: 5px;
+    transition: 0.3s ease;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+}
+
+.line {
+    width: 15%;
+    margin-left: 1rem;
+    margin-top: .5rem;
+}
+
+.useful, .links {
+    list-style: none;
+    list-style: square;
+    display: grid;
+    list-style: square;
+}
+
+.links, .cit {
+    margin: 1rem;
+}
+
+.cit, .of {
+    color: white;
+    text-decoration: none;
+    opacity: .8;
+}
+
+.create {
+    background-color: rgb(88, 88, 177);
+    color: white;
+    padding: 1rem;
+    font-weight: 550;
+}
+
+@media(max-width:800px){
+    nav .mainMenu {
+        height: 60vh;
+        position: fixed;
+        top: 0;
+        right: 0;
+        left: 0;
+        z-index: 10;text-align: end;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: #fff;
+        transition: top 1s ease;
+        display: none;
+    }
+
+    .star {
+        margin: 0;
+        width: 100%;
+        text-align: center;
+    }
+
+    .list {
+        margin: 0;
+        margin-top: 1rem;
+        display: none;
+    }
+
+    .list, .star {
+        margin-left: 4rem;
+    }
+
+    nav .mainMenu .closeMenu {
+        display: block;
+        position: absolute;
+        top: 0;
+        right: 20px;
+    }
+
+    nav .openMenu {
+        display: block;
+        cursor: pointer;
+        position: absolute;
+        top: 0;
+        right: 20px;
+        margin-top: 2.4rem;
+    }
+
+    nav .mainMenu li a:hover {
+        background: none;
+        color: white;
+        font-size: .8rem;
+    }
+
+    nav .logo {
+        font-size: 15px;
+        margin: 0;
+        margin-top: .6rem;
+    }
+
     .hero {
         display: grid;
     }
 
     .gone {
-        display: grid;
+        display: flex;
+        justify-content: space-between;
     }
 
     .wrist {
-        display: grid;
+        display: flex;
     }
 
     .hero-text h1 {
-        font-size: 25px;
-        text-align:center;
+        font-size: 20px;
+        text-align: start;
+        margin-top: 2.5rem;
     }
 
     .hero-text p {
-        text-align: center;
-        font-size: 18px;
+        text-align: start;
+        font-size: 15px;
+        line-height: 2.0;
     }
 
     .hero-text a {
@@ -168,65 +467,177 @@ footer {
 
     .gone-text {
         width: 100%;
+        border: 1px solid rgb(78, 122, 241);
+        padding: 1rem;
+        border-radius: 8px;
+        margin-left: 1rem;
     }
 
     .gone-text h2 {
+        font-size: 15px;
         text-align: center;
-        font-size: 20px;
+        margin: 0;
         margin-top: 1rem;
     }
 
 
     .gone-text img {
-        margin-left: 3rem;
-        width: 80%;
+        width: 100%;
+    }
+
+    .fish {
+        width: 100%;
+        border: 1px solid rgb(78, 122, 241);
+        padding: 1rem;
+        border-radius: 8px;
+        margin-left: 1rem;
     }
 
     .fish h2 {
+        margin: 0 auto;
+        font-size: 15px;
+        margin-top: .8rem;
         text-align: center;
-        font-size: 20px;
-        margin-top: 2rem;
     }
 
 
     .fish img {
-        width: 90%;
+        width: 100%;
         margin-top: 1rem;
+        margin: 0;
+        margin-top: 1rem;
+    }
+
+    .wrist-text {
+        width: 100%;
+        border: 1px solid rgb(78, 122, 241);
+        padding: 1rem;
+        border-radius: 8px;
         margin-left: 1rem;
+        margin-top: 3rem;
     }
 
     .wrist-text h2 {
+        font-size: 15px;
+        margin-top: 2rem;
         text-align: center;
-        font-size: 20px;
     }
 
     .wrist-text img {
-        margin-left: 3rem;
-        width: 80%;
+        width: 100%;
     }
 
     .neck {
         margin-top: 3rem;
-    }
-
-    .neck img {
-        width: 69%;
+        width: 100%;
+        border: 1px solid rgb(78, 122, 241);
+        padding: 1rem;
+        border-radius: 8px;
+        margin-left: 1rem;
     }
 
     .neck h2 {
-        text-align: center;
-        font-size: 20px;
+        font-size: 15px;
         margin: 0 auto;
+        margin-top: 2rem;
+        text-align: center;
     }
 
     .neck img {
-        margin-left: 5rem;
+        width: 100%;
         margin-top: 1rem;
-        margin-bottom: 2rem;
+        margin: 0;
+        margin-top: 1rem;
     }
 
-    footer {
+   
+
+    .cart {
+        margin: 0 auto;
+        /* margin-left: 2rem; */
+    }
+
+    .cart p {
+        /* margin-left: 3rem; */
+        font-weight: 800;
+    }
+
+    .to {
+        display: flex;
+        justify-content: center;
+        margin: 0 auto;
+        margin-top: 2rem;
+    }
+
+    .to a {
+        margin-left: 2rem;
+        border: 1px solid;
+        text-decoration: none;
+        padding-left: 3rem;
+        padding-right: 3rem;
+        padding-top: .3rem;
+        padding-bottom: .3rem;
+        color: blue;
+    }
+
+    .carts {
+        margin: 0 auto;
+        /* margin-left: 3.5rem; */
+    }
+
+
+    .more a {
+        margin-top: 2rem;
+    }
+
+    .touch {
+        width: 90%;
+        margin: 0;
+        border-radius: 2px;
+        margin: 0 auto;
+        margin-top: 3rem;
+    }
+
+    .city {
+        display: grid;
+        margin-top: 3rem;
+    }
+
+    .line {
+        width: 7%;
+    }
+
+    .refuge {
+        margin: 0;
+    }
+
+    .refuge h1 {
+        margin: 0;
+        margin-left: .4rem;
+        margin-top: 1rem;
+    }
+
+    .refuge, .street {
+        margin: 0;
+        margin-left: .4rem;
+        margin-top: 1rem;
+        width: 70%;
+    }
+
+    .refuge, .email {
+        margin: 0;
+        margin-left: .4rem;
+        margin-top: 1rem;
+    }
+
+    .refuge, .phone {
+        margin: 0;
+        margin-left: .4rem;
+    }
+
+    .create {
         font-size: 13px;
-        padding: 1rem;
+        text-align: center;
+        padding: 2rem;
     }
 }
