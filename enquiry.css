@@ -209,7 +209,7 @@ nav p {
     }
 
     nav .mainMenu li a:hover {
-        background: none;
+        color: royalblue;
         font-size: .8rem;
     }
 
