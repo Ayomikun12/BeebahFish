@@ -37,6 +37,7 @@ nav .mainMenu li a {
     text-decoration: none;
     text-transform: uppercase;
     font-size: .7rem;
+    color: blue;
 }
 nav .mainMenu li a:hover {
     background: white;
@@ -106,13 +107,21 @@ header {
     opacity: .8;
 }
 
+.fish {
+    width: 20%;
+    border: 1px solid rgb(78, 122, 241);
+    padding: 1rem;
+    border-radius: 8px;
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+
 .fish h2 {
-    margin-left: 19rem;
+    text-align: center;
 }
 
 .glas img {
-    width: 35%;
-    margin-left: 21rem;
+    width: 100%;
     margin-top: 1rem;
 }
 
@@ -136,12 +145,19 @@ header {
 .gone {
     display: flex;
     justify-content: space-between;
-    transition: 2s ease;
+}
+
+.gone-text {
+    width: 20%;
+    border: 1px solid rgb(78, 122, 241);
+    padding: 1rem;
+    border-radius: 8px;
+    margin-left: 1rem;
 }
 
 
 .gone-text img {
-    width: 60%;
+    width: 100%;
     margin-top: 20px;
 }
 
@@ -164,16 +180,27 @@ header {
     color: blue;
 }
 
-.cart {
-    margin-left: 21rem;
-}
 
 .add {
     margin-top: 1rem;
 }
 
 .to {
-    margin-top: 1rem;
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    margin-top: 2rem;
+}
+
+.to a {
+    margin-left: 2rem;
+    border: 1px solid;
+    text-decoration: none;
+    padding-left: 3rem;
+    padding-right: 3rem;
+    padding-top: .3rem;
+    padding-bottom: .3rem;
+    color: blue;
 }
 
 .cart a {
@@ -194,11 +221,18 @@ header {
     font-weight: 800;
 }
 
-
-
 .wrist {
     display: flex;
     justify-content: space-between;
+}
+
+.wrist-text {
+    width: 20%;
+    border: 1px solid rgb(78, 122, 241);
+    padding: 1rem;
+    border-radius: 8px;
+    margin-left: 1rem;
+    margin-top: 3rem;
 }
 
 .wrist-text h2 {
@@ -206,31 +240,40 @@ header {
 }
 
 .wrist-text img {
-    width: 55%;
+    width: 100%;
     margin-top: 20px;
+}
+
+.neck {
+    margin-top: 3rem;
+    width: 20%;
+    border: 1px solid rgb(78, 122, 241);
+    padding: 1rem;
+    border-radius: 8px;
+    margin-right: 1rem;
 }
 
 
 .neck h2 {
-    margin-left: 22rem;
     margin-top: 3rem;
 }
 
 
 .neck img {
-    width: 40%;
-    margin-left: 20rem;
+    width: 100%;
     margin-top: 20px;
 }
 
 .more {
     display: flex;
     justify-content: center;
+    margin: 0 auto;
+    margin-top: 1rem;
 }
 
 .more a {
     text-decoration: none;
-    background-color: black;
+    background-color: rgb(54, 54, 230);
     color: white;
     padding: 1rem;
     border-radius: 6px;
@@ -241,7 +284,7 @@ header {
     margin-top: 3rem;
     box-shadow: black;
     background-color: rgb(241, 240, 240);
-    width: 20%;
+    width: 25%;
     padding: 1rem;
     border-radius: 8px;
 }
