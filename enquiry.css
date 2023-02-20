@@ -38,7 +38,6 @@ nav .mainMenu li a {
     color: blue;
 }
 nav .mainMenu li a:hover {
-    background: white;
     color: blue;
 }
 
@@ -211,7 +210,6 @@ nav p {
 
     nav .mainMenu li a:hover {
         background: none;
-        color: white;
         font-size: .8rem;
     }
 
@@ -234,6 +232,7 @@ nav p {
         margin-top: 20px;
         font-size: 15px;
         margin-left: 1rem;
+        width: 93%;
     }
 
     .city {
