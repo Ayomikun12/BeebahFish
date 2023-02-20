@@ -665,12 +665,14 @@ header {
         margin-left: .4rem;
         margin-top: 1rem;
         width: 70%;
+        font-size: 15px;
     }
 
     .refuge, .email {
         margin: 0;
         margin-left: .4rem;
         margin-top: 1rem;
+        font-size: 15px;
     }
 
     .refuge, .phone {

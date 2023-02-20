@@ -205,7 +205,7 @@ nav p {
         position: absolute;
         top: 0;
         right: 20px;
-        margin-top: 1.2rem;
+        margin-top: 1.5rem;
     }
 
     nav .mainMenu li a:hover {
@@ -259,12 +259,14 @@ nav p {
         margin-left: .4rem;
         margin-top: 1rem;
         width: 70%;
+        font-size: 15px;
     }
 
     .refuge, .email {
         margin: 0;
         margin-left: .4rem;
         margin-top: 1rem;
+        font-size: 15px;
     }
 
     .refuge, .phone {
