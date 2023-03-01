@@ -276,6 +276,7 @@ header {
     color: white;
     padding: 1rem;
     border-radius: 6px;
+    cursor: pointer;
 }
 
 .touch {
